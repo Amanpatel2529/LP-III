@@ -1,0 +1,44 @@
+ steps : 
+ import pandas as pd 
+ import numpy as np 
+ import seaborn as sns
+
+ df = pd.read_csv("csv file name or path")
+
+df.head()
+df.info()
+df.describe()
+df.shape
+df.isnull().sum()
+
+//dropping rows with missing values
+df.dropna(inplace = True)
+df.isnull().sum()
+
+//dropping unwanted colmns
+df.drop(labels='Unnamed : 0', axis=1, inplace=True)
+df.drop(labels='key', axis=1, inplace=True)
+df.head()
+
+
+//converting datatype of col "pickup_datetime" from object to pickup_datetime
+df["pickup_datetime"] = pd.to_datetime(df["pickup_datetime"])
+df.describe()
+
+//data visualization
+//outlier 
+import warnings
+warnings.filterwarnings("ignore")
+sns.distplot(df['fare_amount'])
+<Axes: xlabel='fare_amount', ylabel='Density'>
+sns.distplot(df['pickup_latitude'])
+<Axes: xlabels='pickup_latitude', ylabels='Density'>
+
+
+//function to treat outliers
+def find_outliers_IQR(df):
+ q1 = df.quantile(0.25)
+ q3 = df.quantile(0.75)
+ IQR = q3 - q1
+ outliers = df[((df<(q1-1.5*IQR)) | (df> (q3+1.5*IQR)))]
+ return outliers

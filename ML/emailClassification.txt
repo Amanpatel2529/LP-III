@@ -1,0 +1,34 @@
+import pandas as pd
+df = pd.read_csv('csv path or name')
+
+df.shape
+df.head()
+
+// i/p data
+x = df.drop(['Email No.', 'Prediction'], axis=1)
+
+// o/p data
+y = df.drop(['Prediction'])
+
+x.shape
+x.dtypes
+
+import seaborn as sns
+sns.countplot(x == y);
+
+y.value_counts()
+
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+x_scaled = scaler.fit_transform(x)
+
+x_scaled
+
+
+//cross validation
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_test = train_test_split(x_scaled, y, random_state = 0, test_size = 0.25)
+
+x.scaled.shape
+x-train.shape
+x_test.shape

@@ -9,10 +9,28 @@ DAA ->
  4) N Queens - design n-queens matrix having first queen placed. use backtracking to place remaining queens to generate the final n-queens matrix - done
 
 ML -> 
- 1)
- 2)
- 3)
- 4)
+ 1) Title : Uber ride fare prediction using linear regression algo 
+ -> Statement : Predict price of the uber ride from given pickup to dropoff location
+    Task : 
+        1.Pre-process dataset
+        2.Identify outliers
+        3.Check correlation
+        4.implement linear regression and random forest regression models
+        5.Evaluate models and compare scores like R2, RMSE, etc.
+
+        link to dataset : https://www.kaggle.com/datasets/yasserh/uber-fares-dataset
+
+ 2) Title : Classify email using binary classification method
+ -> Statement : Classify email using binary classification method. Email spam detection has 2 states.
+    a. Normal state - Not spam 
+    b. Abnormal state - spam
+    Use K-Nearest Neighbors and support
+
+    dataset link : https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv 
+
+ 4) Title : implement K-Nearest Neighbors algorithm on diabetes.csv dataset. Compute confusion matrix, accuracy, error rate, precision and recall on the given dataset.
+    Statement :  Implement K-Nearest Neighbors algorithm on diabetes.csv dataset. Compute confusion matrix, accuracy, error rate, precision and recall on the given dataset.
+    dataset link : https://www.kaggle.com.dataset/abdallamahgoub/diabetes
 
 BT -> 
  1)

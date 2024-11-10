@@ -1,0 +1,20 @@
+DAA ->
+ 
+ 1) Fibo - program to calculate fibo num and analyze time and space complexity - done
+
+ 2) Huffman Encoding - program to implement huffman encoding using greedy strategy
+
+ 3) Fractional knapsack - program to solve fractional knapsack problem using greedy method - done
+
+ 4) N Queens - design n-queens matrix having first queen placed. use backtracking to place remaining queens to generate the final n-queens matrix - done
+
+ML -> 
+ 1)
+ 2)
+ 3)
+ 4)
+
+BT -> 
+ 1)
+ 2)
+ 3)

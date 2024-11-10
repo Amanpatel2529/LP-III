@@ -33,6 +33,6 @@ ML ->
     dataset link : https://www.kaggle.com.dataset/abdallamahgoub/diabetes
 
 BT -> 
- 1)
+ 1) Create Student data
  2)
  3)
